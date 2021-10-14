@@ -1,4 +1,4 @@
-package com.company1;
+package com.company;
 
 public class ContactDetails {
     //variables
@@ -91,6 +91,17 @@ public class ContactDetails {
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
-
-
+    @Override
+    public String toString() {
+        return "ContactDetails{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipCode=" + zipCode +
+                ", mobileNo=" + mobileNumber +
+                ", emailId='" + emailId + '\'' +
+                '}';
+    }
 }
